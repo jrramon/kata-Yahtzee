@@ -3,17 +3,14 @@ class Yahtzee_score
 	def points(category, dices)
 		case category
 			when :ones
-				return sum_of_ones(dices)
+				return sum_of(dices, 1)
 			when :twos
-				return sum_of_twos(dices)
+				return sum_of(dices, 2)
 		end
 	end
 
-	def sum_of_ones(dices)
-		dices.count{|die| die == 1 }
+	def sum_of(dices, n)
+		dices.count{|die| die == n } * n
 	end
 
-	def sum_of_twos(dices)
-		dices.count{|die| die == 2 } * 2
-	end
 end
