@@ -10,6 +10,7 @@ describe Yahtzee_score, "#score" do
 		end
 		it "the sum for TWOS" do
 			yahtzee_score.points(:twos, [1,2,1,2,2]).should eq (6)
+			yahtzee_score.points(:twos, [1,2,1,2,5]).should eq (4)
 		end
 	end
 
