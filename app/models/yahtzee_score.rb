@@ -1,6 +1,11 @@
 class Yahtzee_score
 
 	def points(category, dices)
-		return 1
+		case category
+			when :ones
+				return 1
+			when :twos
+				return 6
+		end
 	end
 end
