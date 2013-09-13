@@ -6,6 +6,7 @@ describe Yahtzee_score, "#score" do
 	describe "for categories of numbers" do
 		it "the sum for ONES" do
 			yahtzee_score.points(:ones, [1,2,2,2,2]).should eq (1)
+			yahtzee_score.points(:ones, [1,2,1,2,2]).should eq (2)
 		end
 		it "the sum for TWOS" do
 			yahtzee_score.points(:twos, [1,2,1,2,2]).should eq (6)
