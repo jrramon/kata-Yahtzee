@@ -1,0 +1,313 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"train",
+				"training"
+			],
+			[
+				"instance",
+				"instanceT1"
+			],
+			[
+				"training",
+				"trainings"
+			],
+			[
+				"in",
+				"instantiate"
+			],
+			[
+				"S",
+				"Suscríbete"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/models/yahtzee_score.rb",
+			"settings":
+			{
+				"buffer_size": 420,
+				"line_ending": "Unix",
+				"name": "class Yahtzee_score"
+			}
+		},
+		{
+			"contents": "require 'spec_helper'\n\ndescribe Yahtzee_score, \"#score\" do\n	let (:yahtzee_score) {Yahtzee_score.new}\n\n	describe \"for categories of numbers\" do\n		describe \"the sum for ONES\" do\n			it \"when there is only one\" do\n				yahtzee_score.points(:ones, [1,2,2,2,2]).should eq (1)\n			end\n			it \"when there are three\" do\n				yahtzee_score.points(:ones, [1,2,1,2,1]).should eq (3)\n			end\n		end\n\n	  	describe \"returns the sum for TWOS\" do\n		    it \"when there is only one\" do\n				yahtzee_score.points(:twos, [1,5,2,5,4]).should eq (2)\n			end\n			it \"when there are three\" do\n				yahtzee_score.points(:twos, [1,2,1,2,2]).should eq (6)\n			end\n	  	end\n\n	  it \"return the sum for SIXES\" do\n	    yahtzee_score.points(:sixes, [1,6,6,2,2]).should eq (12)\n	  end\n	end\n\n	describe \"\"\n\n\nend",
+			"file": "spec/yahtzee_score_spec.rb",
+			"file_size": 749,
+			"file_write_time": 1378910855000000,
+			"settings":
+			{
+				"buffer_size": 763,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Guardfile",
+			"settings":
+			{
+				"buffer_size": 1201,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/Ruby/Ruby.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 530.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/joserra/proyectos/katas/kata-yahtzee/spec/test_helper.rb",
+		"/Users/joserra/proyectos/katas/kata-yahtzee/spec/spec_helper.rb",
+		"/Users/joserra/proyectos/katas/kata-yahtzee/Guardfile",
+		"/Users/joserra/proyectos/katas/kata-yahtzee/Gemfile",
+		"/Users/joserra/proyectos/katas/kata-yahtzee/test/unit/yahtzee_score_spec.rb",
+		"/Users/joserra/proyectos/agilar/agora/app/views/profiles/_header.html.haml",
+		"/Users/joserra/proyectos/agilar/agora/config/initializers/active_admin.rb",
+		"/Users/joserra/proyectos/agilar/agora/db/schema.rb",
+		"/Users/joserra/proyectos/agilar/agora/Gemfile",
+		"/Users/joserra/proyectos/agilar/agora/spec/factories/user.rb",
+		"/Users/joserra/proyectos/agilar/agora/db/migrate/20130628101448_add_archived_to_user.rb",
+		"/Users/joserra/proyectos/agilar/agora/db/migrate/20130520152923_create_default_categories.rb",
+		"/Users/joserra/proyectos/agilar/agora/app/controllers/trainings_controller.rb",
+		"/Users/joserra/proyectos/agilar/agora/app/models/training.rb",
+		"/Users/joserra/proyectos/agilar/agora/spec/models/training_spec.rb",
+		"/Users/joserra/proyectos/agilar/agora/spec/factories/training.rb",
+		"/Users/joserra/proyectos/agilar/agora/app/views/trainings/_form.html.haml",
+		"/Users/joserra/proyectos/agilar/agora/db/seeds/create_categories.rb",
+		"/Users/joserra/proyectos/agilar/agora/db/seeds/create_trainings.rb",
+		"/Users/joserra/proyectos/agilar/agora/db/seeds.rb",
+		"/Users/joserra/proyectos/agilar/agora/db/migrate/20130603211324_add_parent_training_to_training.rb",
+		"/Users/joserra/proyectos/agilar/agora/db/seeds/create_default_users.rb",
+		"/Users/joserra/proyectos/agilar/agora/app/models/user.rb",
+		"/Users/joserra/proyectos/agilar/agora/app/models/profile.rb",
+		"/Users/joserra/proyectos/agilar/agora/db/test.sqlite3",
+		"/Users/joserra/proyectos/agilar/website/app/helpers/application_helper.rb",
+		"/Users/joserra/proyectos/agilar/website/app/views/home/_agile_assessment.html.erb",
+		"/Users/joserra/proyectos/agilar/website/config/environments/testing.rb",
+		"/Users/joserra/proyectos/agilar/website/config/environments/production.rb",
+		"/Users/joserra/proyectos/agilar/website/config/environments/test.rb"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"en",
+			"authenticate_admin_user",
+			"ActiveAdmin",
+			"related_to_user",
+			"upcoming_structure",
+			"hidden",
+			"in_curriculum",
+			"set_instance",
+			"country_es?",
+			"newsletter",
+			"agilar_benelux_phone",
+			"newsletter",
+			"agile_assessment_second_paragraph",
+			"we_are_agilar_html",
+			"agile_assessment_second_paragraph",
+			"\"subscribe\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/models/yahtzee_score.rb",
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								302,
+								302
+							]
+						],
+						"settings":
+						{
+							"auto_name": "class Yahtzee_score",
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "spec/yahtzee_score_spec.rb",
+					"settings":
+					{
+						"buffer_size": 763,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								756,
+								756
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Guardfile",
+					"settings":
+					{
+						"buffer_size": 1201,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								169,
+								169
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 209.0,
+	"status_bar_visible": true
+}
