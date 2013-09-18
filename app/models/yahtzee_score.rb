@@ -14,10 +14,13 @@ class Yahtzee_score
 	end
 
 	def sum_of_highest_pair(dices)
-		max_apps = counts_appearances(dices).sort_by { |dice, count| dice }
-		max_apps.reverse.each {|dice, apps|
+		counts_appearances_ordered_by_dice(dices).reverse.each {|dice, apps|
 			return dice * 2 if apps >= 2
 		} 
+	end
+
+	def counts_appearances_ordered_by_dice(dices)
+		counts_appearances(dices).sort_by { |dice, count| dice }
 	end
 
 	def counts_appearances(dices)
