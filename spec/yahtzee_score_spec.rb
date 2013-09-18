@@ -25,6 +25,11 @@ describe Yahtzee_score, "#score" do
 			yahtzee_score.points(:pairs, [3,3,3,4,4]).should eq (8)
 			yahtzee_score.points(:pairs, [3,6,6,4,4]).should eq (12)
 		end
+
+		it "there are NO pairs" do
+			yahtzee_score.points(:pairs, [1,2,3,4,5]).should eq (0)
+		end
+
 	end
  
 
