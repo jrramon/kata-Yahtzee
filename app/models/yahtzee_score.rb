@@ -4,6 +4,8 @@ class Yahtzee_score
 		case category
 			when :values
 				return sum_of(dices, n)
+			when :pairs
+				return 8
 		end
 	end
  
