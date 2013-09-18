@@ -22,12 +22,9 @@ class Yahtzee_score
 
 	def counts_appearances(dices)
 		counts = {0 => 0}
-		counts[1] = dices.count{|die| die == 1 } 
-		counts[2] = dices.count{|die| die == 2 } 
-		counts[3] = dices.count{|die| die == 3 } 
-		counts[4] = dices.count{|die| die == 4 } 
-		counts[5] = dices.count{|die| die == 5 } 
-		counts[6] = dices.count{|die| die == 6 } 
+		(1..6).each{|n|
+			counts[n] = dices.count{|die| die == n } 
+		}
 		counts
 	end
 
