@@ -12,7 +12,23 @@ describe Yahtzee_score, "#score" do
 			yahtzee_score.points(:twos, [1,2,1,2,2]).should eq (6)
 			yahtzee_score.points(:twos, [1,2,1,2,5]).should eq (4)
 		end
+		it "the sum for THREES" do
+			yahtzee_score.points(:threes, [1,2,1,3,2]).should eq (3)
+			yahtzee_score.points(:threes, [1,2,1,3,3]).should eq (6)
+		end
+		it "the sum for FOURS" do
+			yahtzee_score.points(:fours, [1,2,1,4,2]).should eq (4)
+			yahtzee_score.points(:fours, [1,4,1,4,5]).should eq (8)
+		end
+		it "the sum for FIVES" do
+			yahtzee_score.points(:fives, [1,2,1,2,5]).should eq (5)
+			yahtzee_score.points(:fives, [1,5,1,2,5]).should eq (10)
+		end
+		it "the sum for SIXES" do
+			yahtzee_score.points(:sixes, [1,6,1,2,2]).should eq (6)
+			yahtzee_score.points(:sixes, [1,6,1,6,5]).should eq (12)
+		end
 	end
-
+ 
 
 end
