@@ -19,6 +19,12 @@ describe Yahtzee_score, "#score" do
 			yahtzee_score.points(:values, [1,6,1,6,5], 6).should eq (12)
 		end
 	end
+
+	describe "for pairs" do
+		it "there some pairs" do
+			yahtzee_score.points(:pairs, [3,3,3,4,4]).should eq (8)
+		end
+	end
  
 
 end
