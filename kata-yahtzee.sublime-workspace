@@ -28,30 +28,18 @@
 	"buffers":
 	[
 		{
-			"file": "app/models/yahtzee_score.rb",
-			"settings":
-			{
-				"buffer_size": 420,
-				"line_ending": "Unix",
-				"name": "class Yahtzee_score"
-			}
-		},
-		{
-			"contents": "require 'spec_helper'\n\ndescribe Yahtzee_score, \"#score\" do\n	let (:yahtzee_score) {Yahtzee_score.new}\n\n	describe \"for categories of numbers\" do\n		describe \"the sum for ONES\" do\n			it \"when there is only one\" do\n				yahtzee_score.points(:ones, [1,2,2,2,2]).should eq (1)\n			end\n			it \"when there are three\" do\n				yahtzee_score.points(:ones, [1,2,1,2,1]).should eq (3)\n			end\n		end\n\n	  	describe \"returns the sum for TWOS\" do\n		    it \"when there is only one\" do\n				yahtzee_score.points(:twos, [1,5,2,5,4]).should eq (2)\n			end\n			it \"when there are three\" do\n				yahtzee_score.points(:twos, [1,2,1,2,2]).should eq (6)\n			end\n	  	end\n\n	  it \"return the sum for SIXES\" do\n	    yahtzee_score.points(:sixes, [1,6,6,2,2]).should eq (12)\n	  end\n	end\n\n	describe \"\"\n\n\nend",
 			"file": "spec/yahtzee_score_spec.rb",
-			"file_size": 749,
-			"file_write_time": 1378910855000000,
 			"settings":
 			{
-				"buffer_size": 763,
+				"buffer_size": 1134,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Guardfile",
+			"file": "app/models/yahtzee_score.rb",
 			"settings":
 			{
-				"buffer_size": 1201,
+				"buffer_size": 292,
 				"line_ending": "Unix"
 			}
 		}
@@ -80,9 +68,10 @@
 	},
 	"file_history":
 	[
+		"/Users/joserra/proyectos/katas/kata-yahtzee/Guardfile",
+		"/Users/joserra/proyectos/katas/kata-yahtzee/app/models/yahtzee_score.rb",
 		"/Users/joserra/proyectos/katas/kata-yahtzee/spec/test_helper.rb",
 		"/Users/joserra/proyectos/katas/kata-yahtzee/spec/spec_helper.rb",
-		"/Users/joserra/proyectos/katas/kata-yahtzee/Guardfile",
 		"/Users/joserra/proyectos/katas/kata-yahtzee/Gemfile",
 		"/Users/joserra/proyectos/katas/kata-yahtzee/test/unit/yahtzee_score_spec.rb",
 		"/Users/joserra/proyectos/agilar/agora/app/views/profiles/_header.html.haml",
@@ -166,24 +155,24 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/models/yahtzee_score.rb",
+					"file": "spec/yahtzee_score_spec.rb",
 					"settings":
 					{
-						"buffer_size": 420,
+						"buffer_size": 1134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								302,
-								302
+								982,
+								982
 							]
 						],
 						"settings":
 						{
-							"auto_name": "class Yahtzee_score",
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -193,51 +182,24 @@
 				},
 				{
 					"buffer": 1,
-					"file": "spec/yahtzee_score_spec.rb",
+					"file": "app/models/yahtzee_score.rb",
 					"settings":
 					{
-						"buffer_size": 763,
+						"buffer_size": 292,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								756,
-								756
+								282,
+								282
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Ruby/Ruby.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "Guardfile",
-					"settings":
-					{
-						"buffer_size": 1201,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								169,
-								169
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Ruby/Ruby.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
