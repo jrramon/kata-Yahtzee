@@ -31,6 +31,13 @@ describe Yahtzee_score, "#score" do
 		end
 
 	end
+
+	describe "for three of a kind" do
+		it "there are some pairs" do
+			yahtzee_score.points(:three, [3,3,3,4,4]).should eq (9)
+			yahtzee_score.points(:three, [4,6,6,4,4]).should eq (12)
+		end
+	end
  
 
 end
