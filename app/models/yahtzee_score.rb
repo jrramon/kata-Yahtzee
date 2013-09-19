@@ -34,19 +34,19 @@ class Yahtzee_score
 	end
 
 	def small_straight(dices)
-		(1..5).each{|dice|
-			return 0 if !dices.include? dice
-		}
-		15
+		straight(dices, (1..5))
 	end
 
 	def large_straight(dices)
-		(2..6).each{|dice|
-			return 0 if !dices.include? dice
-		}
-		20
+		straight(dices, (2..6))
 	end
 
+	def straight(dices, range)
+		range.each{|dice|
+			return 0 if !dices.include? dice
+		}
+		range.inject(:+)
+	end
 
 	def sum_of_a_kind(dices, n)
 		counts_appearances_ordered_by_dice(dices).reverse.each {|dice, apps|
