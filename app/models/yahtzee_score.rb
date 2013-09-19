@@ -16,15 +16,16 @@ class Yahtzee_score
 	end
 
 	def sum_of_highest_pair(dices)
-		counts_appearances_ordered_by_dice(dices).reverse.each {|dice, apps|
-			return dice * 2 if apps >= 2
-		}
-		0 
+		sum_of_a_kind(dices, 2)
 	end
 
 	def sum_of_highest_three_of_a_kind(dices)
+		sum_of_a_kind(dices, 3)
+	end
+
+	def sum_of_a_kind(dices, n)
 		counts_appearances_ordered_by_dice(dices).reverse.each {|dice, apps|
-			return dice * 3 if apps >= 3
+			return dice * n if apps >= n
 		}
 		0 
 	end
