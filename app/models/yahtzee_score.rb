@@ -47,6 +47,7 @@ class Yahtzee_score
 
 	def yahtzee(dices)
 		return 50 if counts_appearances(dices).values.include?(5)
+		0
 	end
 
 	def straight(dices, range)

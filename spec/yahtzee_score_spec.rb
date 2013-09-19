@@ -82,6 +82,9 @@ describe Yahtzee_score, "#score" do
 		it "Yahtzee" do
 			yahtzee_score.points(:yahtzee, [2,2,2,2,2]).should eq (50)
 		end
+		it "no Yahtzee" do
+			yahtzee_score.points(:yahtzee, [2,3,2,2,2]).should eq (0)
+		end
 	end
  
 
