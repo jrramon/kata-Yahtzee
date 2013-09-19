@@ -10,6 +10,8 @@ class Yahtzee_score
 				return sum_of_highest_three_of_a_kind(dices)
 			when :four
 				return sum_of_highest_four_of_a_kind(dices)
+			when :small_straight
+				return small_straight(dices)
 		end
 	end
  
@@ -27,6 +29,13 @@ class Yahtzee_score
 
 	def sum_of_highest_four_of_a_kind(dices)
 		sum_of_a_kind(dices, 4)
+	end
+
+	def small_straight(dices)
+		(1..5).each{|dice|
+			return 0 if !dices.include? dice
+		}
+		15
 	end
 
 	def sum_of_a_kind(dices, n)

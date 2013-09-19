@@ -45,6 +45,17 @@ describe Yahtzee_score, "#score" do
 			yahtzee_score.points(:four, [4,2,2,2,2]).should eq (8)
 		end
 	end
+
+	describe "Small straight" do
+		it "Small straight" do
+			yahtzee_score.points(:small_straight, [1,2,3,4,5]).should eq (15)
+		end
+
+		it "no small" do
+			yahtzee_score.points(:small_straight, [1,2,3,2,5]).should eq (0)
+		end
+	end
+	
  
 
 end
