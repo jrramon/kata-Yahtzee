@@ -72,6 +72,10 @@ describe Yahtzee_score, "#score" do
 		it "Full house" do
 			yahtzee_score.points(:full_house, [1,1,2,2,2]).should eq (8)
 		end
+		it "no Full house" do
+			yahtzee_score.points(:full_house, [4,4,4,4,4]).should eq (0)
+			yahtzee_score.points(:full_house, [4,4,4,2,4]).should eq (0)
+		end
 	end
  
 

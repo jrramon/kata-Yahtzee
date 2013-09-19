@@ -51,8 +51,9 @@ class Yahtzee_score
 	end
 
 	def full_house(dices)
-		dices.inject(:+) if counts_appearances(dices).value?(3) &&
+		return dices.inject(:+) if counts_appearances(dices).value?(3) &&
 									counts_appearances(dices).value?(2)
+		0
 	end
 
 	def sum_of_a_kind(dices, n)
