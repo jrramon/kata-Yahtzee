@@ -8,6 +8,8 @@ class Yahtzee_score
 				return sum_of_highest_pair(dices)
 			when :three
 				return sum_of_highest_three_of_a_kind(dices)
+			when :four
+				return sum_of_highest_four_of_a_kind(dices)
 		end
 	end
  
@@ -21,6 +23,10 @@ class Yahtzee_score
 
 	def sum_of_highest_three_of_a_kind(dices)
 		sum_of_a_kind(dices, 3)
+	end
+
+	def sum_of_highest_four_of_a_kind(dices)
+		sum_of_a_kind(dices, 4)
 	end
 
 	def sum_of_a_kind(dices, n)
