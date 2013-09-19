@@ -14,6 +14,8 @@ class Yahtzee_score
 				return small_straight(dices)
 			when :large_straight
 				return large_straight(dices)
+			when :full_house
+				return full_house(dices)
 		end
 	end
  
@@ -46,6 +48,11 @@ class Yahtzee_score
 			return 0 if !dices.include? dice
 		}
 		range.inject(:+)
+	end
+
+	def full_house(dices)
+		dices.inject(:+) if counts_appearances(dices).value?(3) &&
+									counts_appearances(dices).value?(2)
 	end
 
 	def sum_of_a_kind(dices, n)
