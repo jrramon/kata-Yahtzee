@@ -86,6 +86,13 @@ describe Yahtzee_score, "#score" do
 			yahtzee_score.points(:yahtzee, [2,3,2,2,2]).should eq (0)
 		end
 	end
+
+	describe "Chance" do
+		it "Chance" do
+			yahtzee_score.points(:chance, [2,1,2,4,2]).should eq (11)
+			yahtzee_score.points(:chance, [6,6,6,6,6]).should eq (30)
+		end
+	end
  
 
 end

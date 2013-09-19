@@ -18,6 +18,8 @@ class Yahtzee_score
 				return full_house(dices)
 			when :yahtzee
 				return yahtzee(dices)
+			when :chance
+				return chance(dices)
 		end
 	end
  
@@ -48,6 +50,10 @@ class Yahtzee_score
 	def yahtzee(dices)
 		return 50 if counts_appearances(dices).values.include?(5)
 		0
+	end
+
+	def chance(dices)
+		dices.inject(:+)
 	end
 
 	def straight(dices, range)
