@@ -16,6 +16,8 @@ class Yahtzee_score
 				return large_straight(dices)
 			when :full_house
 				return full_house(dices)
+			when :yahtzee
+				return yahtzee(dices)
 		end
 	end
  
@@ -41,6 +43,10 @@ class Yahtzee_score
 
 	def large_straight(dices)
 		straight(dices, (2..6))
+	end
+
+	def yahtzee(dices)
+		return 50 if counts_appearances(dices).values.include?(5)
 	end
 
 	def straight(dices, range)
