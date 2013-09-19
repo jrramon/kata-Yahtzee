@@ -12,6 +12,8 @@ class Yahtzee_score
 				return sum_of_highest_four_of_a_kind(dices)
 			when :small_straight
 				return small_straight(dices)
+			when :large_straight
+				return large_straight(dices)
 		end
 	end
  
@@ -37,6 +39,14 @@ class Yahtzee_score
 		}
 		15
 	end
+
+	def large_straight(dices)
+		(2..6).each{|dice|
+			return 0 if !dices.include? dice
+		}
+		20
+	end
+
 
 	def sum_of_a_kind(dices, n)
 		counts_appearances_ordered_by_dice(dices).reverse.each {|dice, apps|

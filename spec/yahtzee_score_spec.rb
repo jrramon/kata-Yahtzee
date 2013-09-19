@@ -49,10 +49,22 @@ describe Yahtzee_score, "#score" do
 	describe "Small straight" do
 		it "Small straight" do
 			yahtzee_score.points(:small_straight, [1,2,3,4,5]).should eq (15)
+			yahtzee_score.points(:small_straight, [1,2,5,4,3]).should eq (15)
 		end
 
 		it "no small" do
 			yahtzee_score.points(:small_straight, [1,2,3,2,5]).should eq (0)
+		end
+	end
+
+	describe "Large straight" do
+		it "Large straight" do
+			yahtzee_score.points(:large_straight, [2,3,4,5,6]).should eq (20)
+			yahtzee_score.points(:large_straight, [6,5,4,3,2]).should eq (20)
+		end
+
+		it "no Large" do
+			yahtzee_score.points(:large_straight, [2,3,2,5,6]).should eq (0)
 		end
 	end
 	
